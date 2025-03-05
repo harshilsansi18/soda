@@ -1,0 +1,8 @@
+data_source soda_analysis_db:
+  type: postgres
+  connection:
+    username: soda_user
+    password: "1234"
+    host: localhost
+    port: 5432
+    database: soda_analysis_db

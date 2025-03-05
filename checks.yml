@@ -1,0 +1,9 @@
+checks for users:
+  - row_count > 0:
+      name: "Users table should not be empty"
+
+  - missing_count(email) = 0:
+      name: "All users must have an email"
+
+  - duplicate_count(username) = 0:
+      name: "Usernames should be unique"
